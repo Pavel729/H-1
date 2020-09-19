@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    /* background-position: center;
+    background-attachment: fixed; */
+    width: 100%;
+    z-index: -10;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation .logo .nav__logo{
+    width: 70%;
+    z-index: 10;
+    padding: 30px 30px 20px 30px;
+    margin:20px 30px 20px 0px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #20333D;
+    font-family: 'Lobster', cursive;
+    background: #FFE589;
+    /* border-radius: 20px; */
+    
+}
+
+.navigation .nav{
+    margin-top: 30px;
+}
+
+.navigation .nav .nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navigation .nav .nav-items li{
+    list-style: none;
+    padding-right: 20px;
+}
+
+.navigation .nav .nav-items li a{
+    text-decoration: none;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+.navigation .nav .nav-items li a:hover{
+    border-bottom: 1px solid #FFE589;
+}
+
+.middle{
+    margin: 70px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: aliceblue;
+}
+
+.middle .heading{
+    width: 291px;
+    height: 200px;
+    padding-bottom: 26px;
+}
+
+.middle .heading h2{
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 100px;
+    color: #FFE589;
+}
+
+.middle .text{
+    width: 28%;
+}
+
+.middle .text p{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #9ef4ff;
+}
+
+.btn{
+    margin-left:90px;
+}
+
+.btn a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #20333D;
+    background: #FFE589;
+    padding: 20px 25px;
+}
+
+.btn a:hover{
+    color: #FFE589;
+    background: #20333D;
+}
+
+@media (max-width:850px){
+    .middle .text{
+        width: 90%;
+    }
+}
+
+@media (max-width:462px){
+    .navigation .logo{
+        width: 70%;
+        z-index: 10;
+        
+    }
+
+    .middle .text{
+        width: 100%;
+    }
+
+    .middle .text p{
+        font-family: 'Open Sans',sans-serif;
+        font-weight: bold;
+        font-size: 0.7em;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #9ef4ff;
+    }
+
+    .navigation .nav{
+        margin-top: 10px;
+    }
+
+    .navigation .nav .nav-items li a{
+        text-decoration: none;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 0.9em;
+        color: aliceblue;
+    }
+}
+
+
